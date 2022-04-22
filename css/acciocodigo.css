@@ -1,5 +1,5 @@
 gi* {
-    background-color:#65EBC3;
+    background-color:#FAF7F6;
     margin: 0;
     padding: 0;
     border: 0;
@@ -21,30 +21,13 @@ gi* {
 
 .h1 {
 
-    color: #7F9DEB;
+    color: #363537;
     font-style: italic;
     font-weight: 600;
     text-align: center;
 }
 
-/* --- Texto Footer --- */
 
-.foo--h4 {
-
-    font-style: italic;
-    text-align: center;
-    color: #7F9DEB;
-    font-weight: bold;
-}
-
-.foo--h5 {
-
-    font-style: italic;
-    text-align: center;
-    color: #7F9DEB;
-    font-weight: bold;
-
-}
 
 /* --- Enlaces de HTML --- */
 
@@ -67,7 +50,6 @@ gi* {
     justify-self: space-around;
     order: 1/5;
     object-fit: contain;
-    color: #EBBD4D;
     margin: 7.5px;
     transform: scale(1.5, 1.5);
     transition:2s;
@@ -82,7 +64,6 @@ gi* {
     justify-self: space-around;
     order: 2/5;
     object-fit: contain;
-    color: #EBBD4D;
     margin: 7.5px;
     transform: scale(1.5, 1.5);
     transition:2s;
@@ -96,7 +77,6 @@ gi* {
     padding-right: 7.5px;
     justify-items: auto;
     order: 3/5;
-    color: #EBBD4D;
     margin: 7.5px;
     transform: scale(1.5, 1.5);
     transition:2s;
@@ -109,7 +89,6 @@ gi* {
     padding-right: 7.5px;
     justify-items: auto;
     order: 4/5;
-    color: #EBBD4D;
     margin: 7.5px;
     transform: scale(1.5, 1.5);
     transition:2s;
@@ -122,7 +101,6 @@ gi* {
     padding-right: 7.5px;
     justify-items: auto;
     order: 5/5;
-    color: #EBBD4D;
     margin: 7.5px;
     transform: scale(1.5, 1.5);
     transition:2s;
@@ -135,7 +113,6 @@ gi* {
 
 /* Main Index */
 
-@media only screen and (min-width:576px) and (max-width: 1400px) {
 
 
 .principal__sección__imgmain--llamado {
@@ -149,7 +126,7 @@ gi* {
 
 .principal__sección__imgmain--h2 {
 
-    color: #EBBD4D;
+    color: #363537 ;
     text-align: center;
     display: block;
     line-height: 0.9;
@@ -174,66 +151,54 @@ gi* {
 }
 
 
-.principal__sección__imgmain--cocacola:hover {
+.principal__sección__imgmain--cocacola {
 
     width: 100px;
     height: 100px;
     grid-area: "cocacola";
     box-shadow: 10px;
-    transform: scaleX(1.5);
-    transition: 2.3s;
 }
 
-.principal__sección__imgmain--ibm:hover {
+.principal__sección__imgmain--ibm {
 
     width: 100px;
     height: 100px;
     grid-area: "ibm";
     box-shadow: 10px;
-    transform: scaleX(1.5);
-    transition: 2.3s;
 }
 
-.principal__sección__imgmain--mcdonalds:hover {
+.principal__sección__imgmain--mcdonalds {
 
     width: 100px;
     height: 100px;
     grid-area: mcdonalds;
     box-shadow: 10px;
-    transform: scaleX(1.5);
-    transition: 2.3s;
 }
 
-.principal__sección__imgmain--microsoft:hover {
+.principal__sección__imgmain--microsoft {
 
     width: 100px;
     height: 100px;
     grid-area: "microsoft";
     box-shadow: 10px;
-    transform: scaleX(1.5);
-    transition: 2.3s;
 }
 
-.principal__sección__imgmain--linux:hover {
+.principal__sección__imgmain--linux {
 
     width: 100px;
     height: 100px;
     grid-area: "linux";
     box-shadow: 10px;
-    transform: scaleX(1.5);
-    transition: 2.3s;
+    
 }
 
-.principal__sección__imgmain--kfc:hover {
+.principal__sección__imgmain--kfc {
 
     width: 100px;
     height: 100px;
     grid-area: "kfc";
     box-shadow: 10px;
-    transform: scaleX(1.5);
-    transition: 2.3s;
-
-} }
+}
 
 
 
@@ -444,13 +409,35 @@ gi* {
 
 /* Footer */
 
-.foo__socialmedia {
-
+.foo {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-content: center;
+
+}
+
+.foo--h4 {
+
+    font-style: italic;
+    text-align: center;
+    color: #363537;
+    font-weight: bold;
+}
+
+.foo--h5 {
+
+    font-style: italic;
+    text-align: center;
+    color: #363537;
+    font-weight: bold;
+}
+
+
+
+.foo__socialmedia {
+
     padding-left: 85px;
     padding-top: 45px;
     margin: 7.5px;
