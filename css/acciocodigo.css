@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-* {
-    background-color:#fff;
-=======
-gi* {
-    background-color:#FAF7F6;
->>>>>>> bootstrap
+
+gi*{
+    background-color: #FAF7F6;
     margin: 0;
     padding: 0;
     border: 0;
@@ -24,8 +20,6 @@ gi* {
     height: 150px;
 }
 
-<<<<<<< HEAD
-=======
 .h1 {
 
     color: #363537;
@@ -33,10 +27,8 @@ gi* {
     font-weight: 600;
     text-align: center;
 }
->>>>>>> bootstrap
 
 
-<<<<<<< HEAD
 .foo--h4 {
 
     font-style: italic;
@@ -53,8 +45,6 @@ gi* {
     font-weight: bold;
 
 }
-=======
->>>>>>> bootstrap
 
 /* --- Enlaces de HTML --- */
 
@@ -116,10 +106,7 @@ gi* {
     padding-right: 7.5px;
     justify-self: space-around;
     order: 3/5;
-<<<<<<< HEAD
     object-fit: contain;
-=======
->>>>>>> bootstrap
     margin: 7.5px;
     transform: scale(1.5, 1.5);
     transition:2s;
@@ -132,10 +119,7 @@ gi* {
     padding-right: 7.5px;
     justify-self: space-around;
     order: 4/5;
-<<<<<<< HEAD
     object-fit: contain;
-=======
->>>>>>> bootstrap
     margin: 7.5px;
     transform: scale(1.5, 1.5);
     transition:2s;
@@ -148,10 +132,7 @@ gi* {
     padding-right: 7.5px;
     justify-self: space-around;
     order: 5/5;
-<<<<<<< HEAD
     object-fit: contain;
-=======
->>>>>>> bootstrap
     margin: 7.5px;
     transform: scale(1.5, 1.5);
     transition:2s;
@@ -177,14 +158,12 @@ gi* {
 
 .principal__sección--Soluciones {
 
-<<<<<<< HEAD
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(7, 1fr);
     grid-template-areas: "h2Soluciones tituloH3 parrafoMain responsiveDesign programador hosting";
     padding-left: 85px;
     margin-left: 7.5px;
-=======
     color: #363537 ;
     text-align: center;
     display: block;
@@ -192,7 +171,6 @@ gi* {
     font-weight: 600;
     font-style: italic;
     font-size: 3rem
->>>>>>> bootstrap
 }
 
 .h2--soluciones {
@@ -258,7 +236,7 @@ gi* {
 
 
 
-}
+
 
 
 
@@ -326,11 +304,8 @@ gi* {
     height: 100px;
     grid-area: "kfc";
     box-shadow: 10px;
-<<<<<<< HEAD
     transform: scaleX(1.5);
     transition: 2.3s;
-=======
->>>>>>> bootstrap
 }
 
 
