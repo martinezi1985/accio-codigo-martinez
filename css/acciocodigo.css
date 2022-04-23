@@ -217,11 +217,11 @@ gi* {
 
 .acerca-de-mi {
     grid-area: acerca-de-mi;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-style: italic;
     font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 600;
-    color: #7F9DEB;
+    font-weight: 300;
+    color: #363537;
     padding-left: 5px;
 }
 
@@ -230,13 +230,9 @@ gi* {
 }
 
 
-
-/* colocar clase al Iframe */
-
-
 /* Main Portafolio */
 
-@media only screen and (min-width:576px) and (max-width: 1400px) {
+@media only screen and (min-width:576px) and (max-width: 1600px) {
 
 
 .portafolioMain {
@@ -249,55 +245,43 @@ gi* {
         "kfcPagina"
         "microsoftPagina"
         "linuxPagina";
+        gap: 2px 2px;
 }
 
 .cocacolaPagina {
 
     grid-area: "cocacolaPagina";
-    align-self: stretch;
-    border: 2px solid #EBBD4D;
-    background-color: #000;
+    border: 2px solid #363537;
 }
 
 .mcdonaldsPagina {
 
     grid-area: "mcdonaldsPagina";
-    align-self: stretch;
-    border: 2px solid #EBBD4D;
-    background-color: #000;
+    border: 2px solid #363537;
 }
 
 .ibmPagina {
 
     grid-area: "ibmPagina";
-    align-self: stretch;
-    border: 2px solid #EBBD4D;
-    background-color: #000;
-
+    border: 2px solid #363537;
 }
 
 .kfcPagina {
 
     grid-area: "kfcPagina";
-    align-self: stretch;
-    border: 2px solid #EBBD4D;
-    background-color: #000;
+    border: 2px solid #363537;
 }
 
 .linuxMint {
 
     grid-area: "linuxPagina";
-    align-self: stretch;
-    border: 2px solid #EBBD4D;
-    background-color: #000;
+    border: 2px solid #363537;
 }
 
 .microsoftPagina {
 
     grid-area: "microsoftPagina";
-    align-self: stretch;
-    border: 2px solid #EBBD4D;
-    background-color: #000;
+    border: 2px solid #363537;
 }
 }
 
@@ -305,7 +289,7 @@ gi* {
 
 /* Main Habilidades */
 
-@media only screen and (min-width:576px) and (max-width: 1400px) {
+@media only screen and (min-width:576px) and (max-width: 1600px) {
 
 .logosHabilidades {
 
@@ -318,6 +302,7 @@ gi* {
         "sql";
     padding-left: 85px;
     margin-left: 7.5px;
+    gap: 2px 2px;
 }
 
 .javascript {
@@ -360,14 +345,14 @@ gi* {
 
 /* Main Contactos */
 
-.principal__sección__form {
+/*.principal__sección__form {
 
     display: grid;
     grid-template-rows: repeat(3, 2fr);
     grid-template-areas: "field"
         "legend"
         "grupo";
-    color: #EBBD4D;
+    color: #363537;
     font-size: 1em;
     font-weight: 600;
     font-style: italic;
@@ -375,6 +360,7 @@ gi* {
     padding-left: 85px;
     margin: 7.5px;
 }
+
 
 .principal__sección__form--field {
 
@@ -388,19 +374,28 @@ gi* {
 
 .principal__sección__form--legend {
 
-    color: #EBBD4D;
-    font-size: 1em;
+    color: #363537;
+    font-size: 1.5rem;
     font-style: italic;
-    position: relative;
-    overflow: hidden;
     grid-area: "legend";
+} */
+
+.principalFormulario {
+
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 600;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #363537;
+    margin: 7.5px;
+    padding: 15px;
 }
 
 .principal__sección__form__grupo {
 
-    font-size: 2em;
+    font-size: 1rem;
     font-style: italic;
-    color: #EBBD4D;
+    color: #363537;
     position: relative;
     grid-area: "grupo";
 }
@@ -423,7 +418,9 @@ gi* {
     font-style: italic;
     text-align: center;
     color: #363537;
-    font-weight: bold;
+    font-weight: 600;
+    padding: 15px;
+    margin: 5px;
 }
 
 .foo--h5 {
@@ -431,16 +428,22 @@ gi* {
     font-style: italic;
     text-align: center;
     color: #363537;
-    font-weight: bold;
+    font-weight: 600;
+    padding: 15px;
+    margin: 5px;
 }
 
 
 
 .foo__socialmedia {
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     padding-left: 85px;
     padding-top: 45px;
     margin: 7.5px;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -448,24 +451,28 @@ gi* {
 
     width: 45px;
     height: 45px;
+    align-self: center;
 }
 
 .foo__socialmedia--linkedin {
 
     width: 45px;
     height: 45px;
+    align-self: center;
 }
 
 .foo__socialmedia--instagram {
 
     width: 45px;
     height: 45px;
+    align-self: center;
 }
 
 .foo__socialmedia--youtube {
 
     width: 45px;
     height: 45px;
+    align-self: center;
 }
 
 

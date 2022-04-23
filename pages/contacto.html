@@ -11,44 +11,83 @@
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
-            <script src="https://kit.fontawesome.com/f264730184.js" crossorigin="anonymous"></script>
         </head>
         
         <body>
  
-            <div>
+            
             
                 <header class="container-md-6">
 
-                <nav class="navbar navbar-expand-sm bg-light justify-content-center">
-                    
-                    <!--- nav imagen fondo y enlaces html --->
-                
                 <div class="row">
+                
+                    <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+                    
+                    <!--- nav imagen logotipo y enlaces html --->
+                
+                
                     
                     <img class="logotipo" src="../img/logo_accio.png" alt="Logotipo de la página">
                 
-                    <ul>
-                        <li class="lista1"><a href="../index.html"><button type="button" class="btn btn-danger menuNav">Inicio</button></a></li>
-                        <li class="lista2"><a href="acerca_de.html"><button type="button" class="btn btn-danger menuNav">Acerca de mi</button></a></li>
-                        <li class="lista3"><a href="portafolio.html"><button type="button" class="btn btn-danger menuNav">Portafolio</button></a></li>
-                        <li class="lista4"><a href="habilidades.html"><button type="button" class="btn btn-danger menuNav">Habilidades</button></a></li>
+                    <ul class="nav">
+                        <li class="nav-item lista1"><a href="../index.html"><button type="button" class="btn btn-danger menuNav">Inicio</button></a></li>
+                        <li class="nav-item lista2"><a href="acerca_de.html"><button type="button" class="btn btn-danger menuNav">Acerca de mi</button></a></li>
+                        <li class="nav-item lista3"><a href="portafolio.html"><button type="button" class="btn btn-danger menuNav">Portafolio</button></a></li>
+                        <li class="nav-item lista4"><a href="habilidades.html"><button type="button" class="btn btn-danger menuNav">Habilidades</button></a></li>
                     </ul>
                 
-                </div>
+                
                 
                 
                 
                 </nav>
 
+                </div>
+
             </header>
 
-            </div>
             
             
-            <main class="principal">
+            
+            <main class="principalFormulario">
 
-                <section class="principal__sección">
+                <h2>Haga aquí su consulta</h2>
+
+                <p>En orden de procesar su necesidad se requieren los siguientes datos, por favor, sea explicito en su consulta. El proceso de creación de una pagina
+                    comienza con un boceto de su idea, se maqueta para que tenga una visual de su idea, lo volveré a consultar para ver que opina y luego el proceso
+                    continua... !Haga <strong>realidad</strong> su idea ya!
+                </p>
+                
+                
+                <div class="mb-3 principal__sección__form__grupo">
+                    <label for="formGroupExampleInput" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="formGroupExampleInput" placeholder="email@dominio.com" required>
+                </div>
+                
+                <div class="mb-3 principal__sección__form__grupo">
+                    <label for="formGroupExampleInput2" class="form-label">Whatsapp</label>
+                    <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="11 (requerido)">
+                </div>
+                
+                <div class="mb-3 principal__sección__form__grupo"></div>
+                    <label for="formGroupExampleInput3" class="form-label">Consulta:</label>
+                    <span><textarea name="Consulta" placeholder="Escriba aquí su consulta" cols="500" rows="10" required></textarea></span>
+                
+                    <div class="mb-3 principal__sección__form__grupo">
+                    <label for="formGroupExampleInput4" class="form-label">Botón Enviar:</label>
+                    <input type="submit" class="form-control" id="formGroupExampleInput3" placeholder="enviar">
+                </div>
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <!-- <section class="principal__sección">
         
                     <form class="principal__sección__form">
 
@@ -58,20 +97,20 @@
 
                                 <div class="principal__sección__form__grupo">
 
-                                    <label>email:</label>
+                                    <label for="email">email:</label>
                                     <span><input type="email" name="email" placeholder="email@dominio.com" required></span><br><br>
-                                    <label>whatsapp:</label>
+                                    <label for="whatsapp">whatsapp:</label>
                                     <span><input type="number" name="número" placeholder="11"></span><br><br>
-                                    <label>Consulta:</label>
+                                    <label for="Consulta">Consulta:</label>
                                     <span><textarea name="Consulta" placeholder="Escriba aquí su consulta" cols="500" rows="10" required></textarea><br><br>
-                                    <label>boton enviar:</label>
+                                    <label for="boton enviar">boton enviar:</label>
                                     <span><input type="submit" name="boton" placeholder="enviar"></span>
                                     
                                 </div>
 
                         </fieldset>
 
-                    </form> 
+                    </form> -->
 
                 </section>
 
