@@ -1,5 +1,5 @@
 gi* {
-    background-color:#FAF7F6;
+    background-color: #FAF7F6;
     margin: 0;
     padding: 0;
     border: 0;
@@ -8,7 +8,7 @@ gi* {
     border-style: none;
     max-width: 100%;
     box-sizing: border-box;
-    
+
 }
 
 /* --- Título index y texto footer --- */
@@ -52,7 +52,7 @@ gi* {
     object-fit: contain;
     margin: 7.5px;
     transform: scale(1.5, 1.5);
-    transition:2s;
+    transition: 2s;
 }
 
 
@@ -66,7 +66,7 @@ gi* {
     object-fit: contain;
     margin: 7.5px;
     transform: scale(1.5, 1.5);
-    transition:2s;
+    transition: 2s;
 }
 
 
@@ -79,7 +79,7 @@ gi* {
     order: 3/5;
     margin: 7.5px;
     transform: scale(1.5, 1.5);
-    transition:2s;
+    transition: 2s;
 }
 
 .lista4 a:hover {
@@ -91,7 +91,7 @@ gi* {
     order: 4/5;
     margin: 7.5px;
     transform: scale(1.5, 1.5);
-    transition:2s;
+    transition: 2s;
 }
 
 .lista5 a:hover {
@@ -103,7 +103,7 @@ gi* {
     order: 5/5;
     margin: 7.5px;
     transform: scale(1.5, 1.5);
-    transition:2s;
+    transition: 2s;
 }
 
 
@@ -120,13 +120,13 @@ gi* {
     width: 100vw;
     height: 100vh;
     padding: 15px 15px 15px 15px;
-    
+
 
 }
 
 .principal__sección__imgmain--h2 {
 
-    color: #363537 ;
+    color: #363537;
     text-align: center;
     display: block;
     line-height: 0.9;
@@ -189,7 +189,7 @@ gi* {
     height: 100px;
     grid-area: "linux";
     box-shadow: 10px;
-    
+
 }
 
 .principal__sección__imgmain--kfc {
@@ -224,54 +224,54 @@ gi* {
 @media only screen and (min-width:576px) and (max-width: 1600px) {
 
 
-.portafolioMain {
+    .portafolioMain {
 
-    display: grid;
-    grid-template-columns: repeat(6, 2fr);
-    grid-template-areas: "cocacolaPagina"
-        "mcdonaldsPagina"
-        "ibmPagina"
-        "kfcPagina"
-        "microsoftPagina"
-        "linuxPagina";
+        display: grid;
+        grid-template-columns: repeat(6, 2fr);
+        grid-template-areas: "cocacolaPagina"
+            "mcdonaldsPagina"
+            "ibmPagina"
+            "kfcPagina"
+            "microsoftPagina"
+            "linuxPagina";
         gap: 2px 2px;
-}
+    }
 
-.cocacolaPagina {
+    .cocacolaPagina {
 
-    grid-area: "cocacolaPagina";
-    border: 2px solid #363537;
-}
+        grid-area: "cocacolaPagina";
+        border: 2px solid #363537;
+    }
 
-.mcdonaldsPagina {
+    .mcdonaldsPagina {
 
-    grid-area: "mcdonaldsPagina";
-    border: 2px solid #363537;
-}
+        grid-area: "mcdonaldsPagina";
+        border: 2px solid #363537;
+    }
 
-.ibmPagina {
+    .ibmPagina {
 
-    grid-area: "ibmPagina";
-    border: 2px solid #363537;
-}
+        grid-area: "ibmPagina";
+        border: 2px solid #363537;
+    }
 
-.kfcPagina {
+    .kfcPagina {
 
-    grid-area: "kfcPagina";
-    border: 2px solid #363537;
-}
+        grid-area: "kfcPagina";
+        border: 2px solid #363537;
+    }
 
-.linuxMint {
+    .linuxMint {
 
-    grid-area: "linuxPagina";
-    border: 2px solid #363537;
-}
+        grid-area: "linuxPagina";
+        border: 2px solid #363537;
+    }
 
-.microsoftPagina {
+    .microsoftPagina {
 
-    grid-area: "microsoftPagina";
-    border: 2px solid #363537;
-}
+        grid-area: "microsoftPagina";
+        border: 2px solid #363537;
+    }
 }
 
 
@@ -280,56 +280,56 @@ gi* {
 
 @media only screen and (min-width:576px) and (max-width: 1600px) {
 
-.logosHabilidades {
+    .logosHabilidades {
 
-    display: grid;
-    grid-template-columns: repeat(5, 2fr);
-    grid-template-areas: "javascript"
-        "react"
-        "nodejs"
-        "mongodb"
-        "sql";
-    padding-left: 85px;
-    margin-left: 7.5px;
-    gap: 2px 2px;
-}
+        display: grid;
+        grid-template-columns: repeat(5, 2fr);
+        grid-template-areas: "javascript"
+            "react"
+            "nodejs"
+            "mongodb"
+            "sql";
+        padding-left: 85px;
+        margin-left: 7.5px;
+        gap: 2px 2px;
+    }
 
-.javascript {
+    .javascript {
 
-    width: 250px;
-    height: 250px;
-    grid-area: "javascript";
-}
+        width: 250px;
+        height: 250px;
+        grid-area: "javascript";
+    }
 
-.react {
+    .react {
 
-    width: 250px;
-    height: 250px;
-    grid-area: "react";
-}
+        width: 250px;
+        height: 250px;
+        grid-area: "react";
+    }
 
-.nodejs {
+    .nodejs {
 
-    width: 250px;
-    height: 250px;
-    grid-area: "nodejs";
-}
+        width: 250px;
+        height: 250px;
+        grid-area: "nodejs";
+    }
 
 
 
-.mongodb {
+    .mongodb {
 
-    width: 250px;
-    height: 250px;
-    grid-area: "mongodb";
-}
+        width: 250px;
+        height: 250px;
+        grid-area: "mongodb";
+    }
 
-.sql {
+    .sql {
 
-    width: 250px;
-    height: 250px;
-    grid-area: "sql";
-}
+        width: 250px;
+        height: 250px;
+        grid-area: "sql";
+    }
 }
 
 /* Main Contactos */
@@ -463,10 +463,3 @@ gi* {
     height: 45px;
     align-self: center;
 }
-
-
-
-
-
-
-
