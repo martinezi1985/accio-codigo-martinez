@@ -26,58 +26,53 @@ gi* {
   font-style: italic;
   font-weight: 600;
   text-align: center; }
-
-.lista1 a:hover {
-  text-decoration: none;
-  padding-left: 7.5px;
-  padding-right: 7.5px;
-  justify-self: space-around;
-  order: 1/5;
-  object-fit: contain;
-  margin: 7.5px;
-  transform: scale(1.5, 1.5);
-  transition: 2s; }
-
-.lista2 a:hover {
-  text-decoration: none;
-  padding-left: 7.5px;
-  padding-right: 7.5px;
-  justify-self: space-around;
-  order: 2/5;
-  object-fit: contain;
-  margin: 7.5px;
-  transform: scale(1.5, 1.5);
-  transition: 2s; }
-
-.lista3 a:hover {
-  text-decoration: none;
-  padding-left: 7.5px;
-  padding-right: 7.5px;
-  justify-items: auto;
-  order: 3/5;
-  margin: 7.5px;
-  transform: scale(1.5, 1.5);
-  transition: 2s; }
-
-.lista4 a:hover {
-  text-decoration: none;
-  padding-left: 7.5px;
-  padding-right: 7.5px;
-  justify-items: auto;
-  order: 4/5;
-  margin: 7.5px;
-  transform: scale(1.5, 1.5);
-  transition: 2s; }
-
-.lista5 a:hover {
-  text-decoration: none;
-  padding-left: 7.5px;
-  padding-right: 7.5px;
-  justify-items: auto;
-  order: 5/5;
-  margin: 7.5px;
-  transform: scale(1.5, 1.5);
-  transition: 2s; }
+  .menuBar .lista1 a:hover {
+    text-decoration: none;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    justify-self: space-around;
+    order: 1/5;
+    object-fit: contain;
+    margin: 7.5px;
+    transform: scale(1.5, 1.5);
+    transition: 2s; }
+  .menuBar .lista2 a:hover {
+    text-decoration: none;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    justify-self: space-around;
+    order: 2/5;
+    object-fit: contain;
+    margin: 7.5px;
+    transform: scale(1.5, 1.5);
+    transition: 2s; }
+  .menuBar .lista3 a:hover {
+    text-decoration: none;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    justify-items: auto;
+    order: 3/5;
+    margin: 7.5px;
+    transform: scale(1.5, 1.5);
+    transition: 2s; }
+  .menuBar .lista4 a:hover {
+    text-decoration: none;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    justify-items: auto;
+    order: 4/5;
+    margin: 7.5px;
+    transform: scale(1.5, 1.5);
+    transition: 2s; }
+  .menuBar .lista5 a:hover {
+    text-decoration: none;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+    justify-items: auto;
+    order: 5/5;
+    margin: 7.5px;
+    transform: scale(1.5, 1.5);
+    transition: 2s; }
 
 /* Main Index */
 @media only screen and (min-width: 576px) {
@@ -101,10 +96,10 @@ gi* {
     flex-wrap: nowrap;
     padding-left: 85px;
     margin-left: 7.5px; }
-  .principal__logos--portafolio {
-    width: 100px;
-    height: 100px;
-    box-shadow: 10px; } }
+    .principal--portafolio .logos--portafolio {
+      width: 100px;
+      height: 100px;
+      box-shadow: 10px; } }
 
 /* Main Acerca de mi */
 @media only screen and (min-width: 576px) {
@@ -117,9 +112,9 @@ gi* {
     color: #363537;
     padding-left: 10px;
     text-align: justify; }
-  .miCv {
-    justify-self: center;
-    align-self: center; } }
+    .acerca-de-mi .miCv {
+      justify-self: center;
+      align-self: center; } }
 
 /* Main Portafolio */
 @media only screen and (min-width: 576px) {
@@ -128,8 +123,8 @@ gi* {
     grid-template-columns: repeat(6, 2fr);
     grid-template-areas: "paginasPortafolio paginasPortafolio paginasPortafolio paginasPortafolio paginasPortafolio paginasPortafolio";
     gap: 10px 10px; }
-  .portafolio--areas {
-    grid-area: paginasPortafolio; } }
+    .portafolioMain .portafolio--areas {
+      grid-area: paginasPortafolio; } }
 
 /* Main Habilidades */
 @media only screen and (min-width: 576px) {
@@ -140,8 +135,8 @@ gi* {
     padding-left: 85px;
     margin-left: 7.5px;
     gap: 2px 2px; }
-  .habilidades--diseño {
-    grid-area: habilidades; } }
+    .logosHabilidades .habilidades--diseño {
+      grid-area: habilidades; } }
 
 /* Main Formulario */
 @media only screen and (min-width: 576px) {
@@ -153,12 +148,12 @@ gi* {
     color: #363537;
     margin: 7.5px;
     padding: 15px; }
-  .principal__sección__form__grupo {
-    font-size: 1rem;
-    font-style: italic;
-    color: #363537;
-    position: relative;
-    grid-area: "grupo"; } }
+    .principalFormulario .principal__sección__form__grupo {
+      font-size: 1rem;
+      font-style: italic;
+      color: #363537;
+      position: relative;
+      grid-area: "grupo"; } }
 
 /* Footer */
 .foo {
@@ -170,27 +165,24 @@ gi* {
   margin: 7.5px;
   justify-content: center;
   align-items: center; }
-
-.foo--h4 {
-  font-style: italic;
-  text-align: center;
-  color: #363537;
-  font-weight: 600;
-  padding: 15px;
-  margin: 5px; }
-
-.foo--h5 {
-  font-style: italic;
-  text-align: center;
-  color: #363537;
-  font-weight: 600;
-  padding: 15px;
-  margin: 5px; }
-
-.foo--redes {
-  width: 45px;
-  height: 45px;
-  align-self: center; }
+  .foo .foo--h4 {
+    font-style: italic;
+    text-align: center;
+    color: #363537;
+    font-weight: 600;
+    padding: 15px;
+    margin: 5px; }
+  .foo .foo--h5 {
+    font-style: italic;
+    text-align: center;
+    color: #363537;
+    font-weight: 600;
+    padding: 15px;
+    margin: 5px; }
+  .foo .foo--redes {
+    width: 45px;
+    height: 45px;
+    align-self: center; }
 
 /* Main Contactos */
 /*.principal__sección__form {
