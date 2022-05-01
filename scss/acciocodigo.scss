@@ -111,7 +111,7 @@ gi* {
 
 /* Main Index */
 
-@media only screen and (min-width:576px) {
+@media only screen and (min-width:350px) {
 
     .principal--llamado {
 
@@ -149,8 +149,6 @@ gi* {
     }
     }
 }
-
-
 
 
 
@@ -334,40 +332,3 @@ gi* {
 
 
 
-
-/* Main Contactos */
-
-/*.principal__sección__form {
-
-    display: grid;
-    grid-template-rows: repeat(3, 2fr);
-    grid-template-areas: "field"
-        "legend"
-        "grupo";
-    color: #363537;
-    font-size: 1em;
-    font-weight: 600;
-    font-style: italic;
-    position: relative;
-    padding-left: 85px;
-    margin: 7.5px;
-}
-
-
-.principal__sección__form--field {
-
-    border: none;
-    border-style: none;
-    position: relative;
-    overflow: hidden;
-    grid-area: "field";
-
-}
-
-.principal__sección__form--legend {
-
-    color: #363537;
-    font-size: 1.5rem;
-    font-style: italic;
-    grid-area: "legend";
-} */
