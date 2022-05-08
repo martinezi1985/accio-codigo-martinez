@@ -32,11 +32,11 @@
 /* Main Index */
 @media only screen and (min-width: 350px) {
   .principal--llamado {
+    Height: 100vh;
     width: 100vw;
-    height: 100vh;
+    justify-self: center;
     overflow: hidden;
     padding-left: 500px;
-    justify-self: center;
     align-self: center;
   }
 
@@ -77,6 +77,7 @@
     color: #363537;
     padding-left: 20px;
     text-align: justify;
+    /* mapa */
   }
 
   .acerca-de-mi .miCv {
@@ -101,15 +102,15 @@
   }
 
   .acerca-de-mi .texto--estilo {
-    font-size: 20px;
+    font-size: 2rem;
   }
 
   .acerca-de-mi .texto--estilo {
-    font-size: 20px;
+    font-size: 2rem;
   }
 
   .acerca-de-mi .texto--estilo {
-    font-size: 20px;
+    font-size: 2rem;
   }
 }
 
@@ -145,20 +146,21 @@
 
 /* Main Formulario */
 @media only screen and (min-width: 576px) {
-  .principalFormulario {
+
+  .principalFormulario,
+  .principalFormulario .principal__sección__form__grupo {
     font-size: 1.5rem;
     font-style: italic;
     font-weight: 600;
-    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Roboto";
     color: #363537;
     margin: 7.5px;
     padding: 15px;
+    /* Extend */
   }
 
   .principalFormulario .principal__sección__form__grupo {
-    font-size: 1rem;
-    font-style: italic;
-    color: #363537;
+    color: #2FBF71;
   }
 }
 
