@@ -46,17 +46,18 @@ $colortexto1: #363537;
 
 @media only screen and (min-width:350px) {
 
+    /* Mixin */
+
     @mixin sizes ($height, $width, $justify) {
 
-        Height:$height;
-        width:$width;
+        Height: $height;
+        width: $width;
         justify-self: $justify;
     }
-    
+
     .principal--llamado {
 
         @include sizes (100vh, 100vw, center);
-
         overflow: hidden;
         padding-left: 500px;
         align-self: center;

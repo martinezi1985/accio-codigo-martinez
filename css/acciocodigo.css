@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* Variables */
+
 /* --- Enlaces de HTML --- */
 .logotipo {
   width: 150px;
@@ -31,6 +31,8 @@
 
 /* Main Index */
 @media only screen and (min-width: 350px) {
+
+  /* Mixin */
   .principal--llamado {
     Height: 100vh;
     width: 100vw;
