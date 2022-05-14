@@ -48,13 +48,15 @@ $aspectratio: 1,6;
 
 @media only screen and (min-width:350px) {
 
+    /* Mixin */
+
     @mixin sizes ($height, $width, $justify) {
 
-        Height:$height;
-        width:$width;
+        Height: $height;
+        width: $width;
         justify-self: $justify;
     }
-    
+
     .principal--llamado {
 
         @include sizes (auto, 100%, center);
