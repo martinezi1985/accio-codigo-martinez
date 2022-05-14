@@ -10,6 +10,8 @@ $font4: sans-serif;
 
 $colortexto1: #363537;
 
+$aspectratio: 1,6;
+
 
 /* --- Enlaces de HTML --- */
 
@@ -55,11 +57,11 @@ $colortexto1: #363537;
     
     .principal--llamado {
 
-        @include sizes (100vh, 100vw, center);
-
+        @include sizes (auto, 100%, center);
+        aspect-ratio: $aspectratio;
         overflow: hidden;
-        padding-left: 500px;
         align-self: center;
+        padding-left: 10rem;
     }
 
     .principal__index--encabezados {
@@ -67,7 +69,7 @@ $colortexto1: #363537;
         color: #363537;
         text-align: center;
         line-height: 0.9;
-        font-weight: 600;
+        font-weight: 400;
         font-style: italic;
         font-size: 2.5rem;
         justify-self: center;
@@ -75,10 +77,6 @@ $colortexto1: #363537;
     }
 
     .principal--portafolio {
-
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
         padding-left: 85px;
         margin-left: 7.5px;
 
@@ -153,15 +151,11 @@ $colortexto1: #363537;
 
     .portafolioMain {
 
-        display: grid;
-        grid-template-columns: repeat(6, 2fr);
-        grid-template-areas: "paginasPortafolio paginasPortafolio paginasPortafolio paginasPortafolio paginasPortafolio paginasPortafolio";
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 300px;
         gap: 10px 10px;
-
-        .portafolio--areas {
-            grid-area: paginasPortafolio;
-
-        }
     }
 
 
@@ -173,16 +167,12 @@ $colortexto1: #363537;
 
     .logosHabilidades {
 
-        display: grid;
-        grid-template-columns: repeat(5, 2fr);
-        grid-template-areas: "habilidades habilidades habilidades habilidades habilidades habilidades";
-        padding-left: 85px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 350px;
         margin-left: 7.5px;
-        gap: 2px 2px;
-
-        .habilidades--diseño {
-            grid-area: habilidades;
-        }
+        gap: 20px 20px;
     }
 }
 
@@ -208,6 +198,10 @@ $colortexto1: #363537;
             @extend.principalFormulario;
             color: #2FBF71;
         }
+
+        .consultaBorde {
+            border: 1px solid rgb(212, 210, 210);
+        }
     }
 }
 
@@ -217,37 +211,28 @@ $colortexto1: #363537;
 .foo {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     padding-left: 85px;
     padding-top: 45px;
     margin: 7.5px;
     justify-content: center;
-    align-items: center;
+    align-content:center;
+    background-color: #2FBF71;
 
-    .foo--h4 {
+    .textoFooter{
 
+        font-size: 1.5rem;
         font-style: italic;
-        text-align: center;
-        color: #363537;
-        font-weight: 600;
-        padding: 15px;
-        margin: 5px;
-    }
-
-    .foo--h5 {
-
-        font-style: italic;
-        text-align: center;
-        color: #363537;
-        font-weight: 600;
-        padding: 15px;
-        margin: 5px;
+        font-family: $font1;
+        font-weight: bold;
+        color: $colortexto1;
+        
     }
 
     .foo--redes {
 
-        width: 45px;
-        height: 45px;
+        width: 35px;
+        height: 35px;
         align-self: center;
     }
 }
