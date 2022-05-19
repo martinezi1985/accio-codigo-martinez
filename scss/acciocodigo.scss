@@ -50,11 +50,11 @@ $aspectratio: 1,6;
 
     @mixin sizes ($height, $width, $justify) {
 
-        Height:$height;
-        width:$width;
+        Height: $height;
+        width: $width;
         justify-self: $justify;
     }
-    
+
     .principal--llamado {
 
         @include sizes (auto, 100%, center);
@@ -74,6 +74,7 @@ $aspectratio: 1,6;
         font-size: 2.5rem;
         justify-self: center;
         align-self: center;
+        padding-left: 5rem;
     }
 
     .principal--portafolio {
@@ -92,7 +93,7 @@ $aspectratio: 1,6;
 
 /* Main Acerca de mi */
 
-@media only screen and (min-width:576px) {
+@media only screen and (min-width:350px) {
     .acerca-de-mi {
         display: flex;
         flex-direction: row;
@@ -179,7 +180,7 @@ $aspectratio: 1,6;
 /* Main Formulario */
 
 
-@media only screen and (min-width:576px) {
+@media only screen and (min-width:350px) {
 
     .principalFormulario {
 
@@ -216,23 +217,23 @@ $aspectratio: 1,6;
     padding-top: 45px;
     margin: 7.5px;
     justify-content: center;
-    align-content:center;
+    align-content: center;
     background-color: #2FBF71;
 
-    .textoFooter{
+    .textoFooter {
 
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-style: italic;
         font-family: $font1;
         font-weight: bold;
         color: $colortexto1;
-        
+
     }
 
     .foo--redes {
 
-        width: 35px;
-        height: 35px;
+        width: 25px;
+        height: 25px;
         align-self: center;
     }
 }
