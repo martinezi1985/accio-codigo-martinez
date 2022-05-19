@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
 /* --- Enlaces de HTML --- */
 .logotipo {
   width: 150px;
@@ -31,6 +30,7 @@
 
 /* Main Index */
 @media only screen and (min-width: 350px) {
+
   .principal--llamado {
     Height: auto;
     width: 100%;
@@ -114,6 +114,7 @@
 
 /* Main Portafolio */
 @media only screen and (min-width: 576px) {
+
   .portafolioMain {
     display: flex;
     flex-direction: row;
@@ -125,6 +126,7 @@
 
 /* Main Habilidades */
 @media only screen and (min-width: 576px) {
+
   .logosHabilidades {
     display: flex;
     flex-direction: row;

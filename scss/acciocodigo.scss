@@ -48,6 +48,8 @@ $aspectratio: 1,6;
 
 @media only screen and (min-width:350px) {
 
+    /* Mixin */
+
     @mixin sizes ($height, $width, $justify) {
 
         Height: $height;
