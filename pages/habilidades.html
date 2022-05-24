@@ -23,61 +23,66 @@
 
     <header class="container-md-12">
 
-        <div class="row">
+        <!--- Navbar inicio --->
 
-            <div class="col-8 col-lg-10">
-                <h1 class="principal__index--encabezados">Bienvenido a Accio Código</h1>
-
-
-
-
+        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/logo_accio.png"
+                        alt="logo de la página"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav menuBar">
+                        <li class="nav-item listas">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item listas">
+                            <a class="nav-link" href="acerca_de.html">Mi informacion</a>
+                        </li>
+                        <li class="nav-item listas">
+                            <a class="nav-link" href="portafolio.html">Portafolio</a>
+                        </li>
+                        <li class="nav-item listas">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <!--- nav imagen logotipo y enlaces html --->
-
-        <nav class="navbar navbar-expand-sm bg-light justify-content-center">
-
-            <img class="logotipo" src="../img/logo_accio.png" alt="logotipo de la página">
-
-
-
-            <ul class="nav menuBar">
-                <li class="nav-item listas"><a href="../index.html"><button type="button"
-                            class="btn btn-danger">Inicio</button></a></li>
-                <li class="nav-item listas"><a href="acerca_de.html"><button type="button" class="btn btn-danger">Mi
-                            información</button></a></li>
-                <li class="nav-item listas"><a href="portafolio.html"><button type="button"
-                            class="btn btn-danger">Portafolio</button></a></li>
-                <li class="nav-item listas"><a href="contacto.html"><button type="button"
-                            class="btn btn-danger">Contacto</button></a></li>
-            </ul>
-
-            </div>
-
-
-
         </nav>
+        <!-- Navbar fin -->
         </div>
     </header>
 
 
-    <!--Main Habilidades-->
+    <!--Main habilidades inicio-->
 
     <main class="logosHabilidades">
 
 
 
-        <div class="card" style="width: 12rem;">
+        <div class="row">
+
+            <div class="col-10 col-lg-12">
+
+                <h1 class="encabezadoEstilo">Habilidades</h1>
+            </div>
+        </div>
+
+
+
+        <div class="card" style="width: 14rem;">
             <img src="../img/javascript_logo1.png" class="card-img-top" alt="Logo de Javascript">
             <div class="card-body col-6 col-lg-8">
                 <h5 class="card-title">Javascript</h5>
-                <p class="card-text">Manejo nivel intermedio del lenguaje de programación javascript</p>
+                <p class="card-text">Manejo nivel intermedio del lenguaje Javascript</p>
                 <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" class="btn btn-danger">Visitar</a>
             </div>
         </div>
 
 
-        <div class="card" style="width: 12rem;">
+        <div class="card" style="width: 14rem;">
             <img src="../img/react_logo1.png" class="card-img-top" alt="Logo de React">
             <div class="card-body col-6 col-lg-8">
                 <h5 class="card-title">React.js</h5>
@@ -87,7 +92,7 @@
         </div>
 
 
-        <div class="card" style="width: 12rem;">
+        <div class="card" style="width: 14rem;">
             <img src="../img/nodejs_logo1.png" class="card-img-top" alt="Logo de Node.js">
             <div class="card-body col-6 col-lg-8">
                 <h5 class="card-title">Node.js</h5>
@@ -96,7 +101,7 @@
             </div>
         </div>
 
-        <div class="card" style="width: 12rem;">
+        <div class="card" style="width: 14rem;">
             <img src="../img/mongodb_logo1.png" class="card-img-top" alt="Logo de MongoDB">
             <div class="card-body col-6 col-lg-8">
                 <h5 class="card-title">MongoDB</h5>
@@ -106,7 +111,7 @@
             </div>
         </div>
 
-        <div class="card" style="width: 12rem;">
+        <div class="card" style="width: 14rem;">
             <img src="../img/sql_logo1.png" class="card-img-top" alt="Logo de MongoDB">
             <div class="card-body col-6 col-lg-8">
                 <h5 class="card-title">SQL</h5>
@@ -117,6 +122,9 @@
 
 
     </main>
+    <!--Main habilidades fin-->
+
+    <!--Footer inicio-->
 
     <footer class="container-md-12 foo">
 
@@ -140,7 +148,7 @@
             </div>
         </div>
     </footer>
-
+    <!--Footer fin-->
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"

@@ -10,89 +10,83 @@ $font4: sans-serif;
 
 $colortexto1: #363537;
 
-$aspectratio: 1,6;
+
 
 
 /* --- Enlaces de HTML --- */
 
-.logotipo {
-    width: 150px;
-    height: 150px;
-}
-
 .menuBar {
     display: flex;
     flex-flow: auto;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: space-around;
-    list-style: none;
-    min-height: 85px;
+    justify-content: flex-end;
     width: 100%;
+    font-family: $font1;
+    font-style: italic;
 
 
     .listas a:hover {
 
-        text-decoration: none;
-        padding-left: 7.5px;
-        padding-right: 7.5px;
-        justify-self: space-around;
-        object-fit: contain;
-        margin: 7.5px;
-        transform: scale(1.5, 1.5);
-        transition: 2s;
+        text-decoration: underline solid #EF2D56;
+        transform: skewX(20deg);
+        transition: 0.5s;
     }
 }
 
 /* Main Index */
 
-@media only screen and (min-width:350px) {
+@media only screen and (min-width:350px) and (min-height:500px) {
 
-    @mixin sizes ($height, $width, $justify) {
 
-        Height:$height;
-        width:$width;
-        justify-self: $justify;
-    }
-    
+
     .principal--llamado {
 
-        @include sizes (auto, 100%, center);
-        aspect-ratio: $aspectratio;
+        height: auto;
+        width: 100%;
         overflow: hidden;
+        justify-self: center;
         align-self: center;
-        padding-left: 10rem;
+        padding-left: 18rem;
     }
 
-    .principal__index--encabezados {
+    .principal__index--encabezado {
 
-        color: #363537;
+        color: #EF2D56;
         text-align: center;
-        line-height: 0.9;
-        font-weight: 400;
         font-style: italic;
-        font-size: 2.5rem;
         justify-self: center;
         align-self: center;
     }
 
     .principal--portafolio {
-        padding-left: 85px;
-        margin-left: 7.5px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+
+        .textoPortafolio {
+            font-size: 1rem;
+            font-family: $font1;
+            font-style: italic;
+            color: #363537;
+        }
 
         .logos--portafolio {
-            width: 150px;
-            height: 150px;
-            box-shadow: 10px;
+            width: 5rem;
+            height: 5rem;
+            padding: 5px 5px 5px 5px;
+        }
+
+        .logos--portafolio:hover {
+            transform: scale(1.2, 1.2);
+            transition: 1s;
         }
     }
 }
 
-
-
 /* Main Acerca de mi */
 
-@media only screen and (min-width:576px) {
+@media only screen and (min-width:350px) and (min-height:500px) {
     .acerca-de-mi {
         display: flex;
         flex-direction: row;
@@ -122,81 +116,70 @@ $aspectratio: 1,6;
 
         .textoDescripcion {
             grid-area: texto;
+            font-size: 1rem;
+            font-family: $font1;
+            font-style: italic;
+            color: #363537;
         }
 
-        /* mapa */
-
-        $estilos:(texto1: 6rem,
-            texto2: 4rem,
-            texto3: 2rem);
-
-        @each $estilo,
-        $design in $estilos {
-
-            .texto--#{estilo} {
-
-                font-size: map-get($map: $estilos, $key: texto3);
-            }
-
+        .encabezadoVideo {
+            color: #EF2D56;
+            font-family: $font1;
+            font-style: italic;
+            justify-self: left;
+            align-self: center;
         }
-
-
     }
 }
 
 /* Main Portafolio */
 
 
-@media only screen and (min-width:576px) {
+@media only screen and (min-width:350px) {
 
     .portafolioMain {
 
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        padding-left: 300px;
+        padding-left: 3em;
+        padding-top: 3em;
         gap: 10px 10px;
     }
-
-
 }
 
 /* Main Habilidades */
 
-@media only screen and (min-width:576px) {
+@media only screen and (min-width:350px) {
 
     .logosHabilidades {
 
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        padding-left: 350px;
-        margin-left: 7.5px;
-        gap: 20px 20px;
+        padding-left: 1em;
+        padding-top: 1em;
+        gap: 10px 10px;
     }
 }
 
 /* Main Formulario */
 
 
-@media only screen and (min-width:576px) {
+@media only screen and (min-width:350px) {
 
     .principalFormulario {
 
         font-size: 1.5rem;
         font-style: italic;
-        font-weight: 600;
+        font-weight: bold;
         font-family: $font1;
         color: #363537;
-        margin: 7.5px;
-        padding: 15px;
+        padding: 1em;
 
-        /* Extend */
-
-        .principal__sección__form__grupo {
-
-            @extend.principalFormulario;
-            color: #2FBF71;
+        .etiquetasFormulario {
+            font-size: 1rem;
+            color: #EF2D56
         }
 
         .consultaBorde {
@@ -205,6 +188,19 @@ $aspectratio: 1,6;
     }
 }
 
+
+/* Encabezados h1 portafolio, habilidades y contacto */
+
+@media only screen and (min-width:350px) {
+
+    .encabezadoEstilo {
+        color: #EF2D56;
+        Font-style: italic;
+        justify-self: left;
+        align-self: center;
+        padding-left: 1.5em;
+    }
+}
 
 /* Footer */
 
@@ -216,23 +212,22 @@ $aspectratio: 1,6;
     padding-top: 45px;
     margin: 7.5px;
     justify-content: center;
-    align-content:center;
+    align-content: center;
     background-color: #2FBF71;
 
-    .textoFooter{
+    .textoFooter {
 
         font-size: 1.5rem;
         font-style: italic;
         font-family: $font1;
         font-weight: bold;
         color: $colortexto1;
-        
+
     }
 
     .foo--redes {
 
         width: 35px;
         height: 35px;
-        align-self: center;
     }
 }
