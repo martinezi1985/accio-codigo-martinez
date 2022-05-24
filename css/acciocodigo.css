@@ -1,58 +1,70 @@
-@charset "UTF-8";
-/* Variables */
 /* --- Enlaces de HTML --- */
-.logotipo {
-  width: 150px;
-  height: 150px; }
-
 .menuBar {
   display: flex;
   flex-flow: auto;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-content: space-around;
-  list-style: none;
-  min-height: 85px;
-  width: 100%; }
-  .menuBar .listas a:hover {
-    text-decoration: none;
-    padding-left: 7.5px;
-    padding-right: 7.5px;
-    justify-self: space-around;
-    object-fit: contain;
-    margin: 7.5px;
-    transform: scale(1.5, 1.5);
-    transition: 2s; }
+  justify-content: flex-end;
+  width: 100%;
+  font-family: "Roboto";
+  font-style: italic;
+}
+
+.menuBar .listas a:hover {
+  text-decoration: underline solid #EF2D56;
+  transform: skewX(20deg);
+  transition: 0.5s;
+}
 
 /* Main Index */
 @media only screen and (min-width: 350px) {
+
   .principal--llamado {
-    Height: auto;
+    height: auto;
     width: 100%;
-    justify-self: center;
     aspect-ratio: 1, 6;
     overflow: hidden;
-    align-self: center;
-    padding-left: 10rem; }
-  .principal__index--encabezados {
-    color: #363537;
-    text-align: center;
-    line-height: 0.9;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 2.5rem;
     justify-self: center;
-    align-self: center; }
+    align-self: center;
+    padding-left: 18rem;
+  }
+
+  .principal__index--encabezado {
+    color: #EF2D56;
+    text-align: center;
+    font-style: italic;
+    justify-self: center;
+    align-self: center;
+  }
+
   .principal--portafolio {
-    padding-left: 85px;
-    margin-left: 7.5px; }
-    .principal--portafolio .logos--portafolio {
-      width: 150px;
-      height: 150px;
-      box-shadow: 10px; } }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .principal--portafolio .textoPortafolio {
+    font-size: 1rem;
+    font-family: "Roboto";
+    font-style: italic;
+    color: #363537;
+  }
+
+  .principal--portafolio .logos--portafolio {
+    width: 5rem;
+    height: 5rem;
+    padding: 5px 5px 5px 5px;
+  }
+
+  .principal--portafolio .logos--portafolio:hover {
+    transform: scale(1.2, 1.2);
+    transition: 1s;
+  }
+}
 
 /* Main Acerca de mi */
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 350px) {
+
   .acerca-de-mi {
     display: flex;
     flex-direction: row;
@@ -62,65 +74,104 @@
     color: #363537;
     padding-left: 20px;
     text-align: justify;
-    /* mapa */ }
-    .acerca-de-mi .miCv {
-      justify-self: center;
-      align-self: center; }
-    .acerca-de-mi .textoAcerca {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "texto";
-      justify-content: space-around;
-      align-content: center;
-      margin-top: 5px;
-      margin-left: 5px;
-      margin-bottom: 5px; }
-    .acerca-de-mi .textoDescripcion {
-      grid-area: texto; }
-    .acerca-de-mi .texto--estilo {
-      font-size: 2rem; }
-    .acerca-de-mi .texto--estilo {
-      font-size: 2rem; }
-    .acerca-de-mi .texto--estilo {
-      font-size: 2rem; } }
+  }
+
+  .acerca-de-mi .miCv {
+    justify-self: center;
+    align-self: center;
+  }
+
+  .acerca-de-mi .textoAcerca {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "texto";
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+  }
+
+  .acerca-de-mi .textoDescripcion {
+    grid-area: texto;
+    font-size: 1rem;
+    font-family: "Roboto";
+    font-style: italic;
+    color: #363537;
+  }
+
+  .acerca-de-mi .encabezadoVideo {
+    color: #EF2D56;
+    font-family: "Roboto";
+    font-style: italic;
+    justify-self: left;
+    align-self: center;
+  }
+}
 
 /* Main Portafolio */
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 350px) {
+
   .portafolioMain {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-left: 300px;
-    gap: 10px 10px; } }
+    padding-left: 3em;
+    padding-top: 3em;
+    gap: 10px 10px;
+  }
+}
 
 /* Main Habilidades */
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 350px) {
+
   .logosHabilidades {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-left: 350px;
-    margin-left: 7.5px;
-    gap: 20px 20px; } }
+    padding-left: 1em;
+    padding-top: 1em;
+    gap: 10px 10px;
+  }
+}
 
 /* Main Formulario */
-@media only screen and (min-width: 576px) {
-  .principalFormulario, .principalFormulario .principal__sección__form__grupo {
+@media only screen and (min-width: 350px) {
+
+  .principalFormulario {
     font-size: 1.5rem;
     font-style: italic;
-    font-weight: 600;
+    font-weight: bold;
     font-family: "Roboto";
     color: #363537;
-    margin: 7.5px;
-    padding: 15px;
-    /* Extend */ }
-    .principalFormulario .principal__sección__form__grupo {
-      color: #2FBF71; }
-    .principalFormulario .consultaBorde {
-      border: 1px solid #d4d2d2; } }
+    padding: 1em;
+  }
+
+  .principalFormulario .etiquetasFormulario {
+    font-size: 1rem;
+    color: #EF2D56;
+  }
+
+  .principalFormulario .consultaBorde {
+    border: 1px solid #d4d2d2;
+  }
+}
+
+/* Encabezados h1 portafolio, habilidades y contacto */
+@media only screen and (min-width: 350px) {
+
+  .encabezadoEstilo {
+    color: #EF2D56;
+    Font-style: italic;
+    justify-self: left;
+    align-self: center;
+    padding-left: 1.5em;
+  }
+}
 
 /* Footer */
+
 .foo {
   display: flex;
   flex-direction: row;
@@ -130,14 +181,18 @@
   margin: 7.5px;
   justify-content: center;
   align-content: center;
-  background-color: #2FBF71; }
-  .foo .textoFooter {
-    font-size: 1.5rem;
-    font-style: italic;
-    font-family: "Roboto";
-    font-weight: bold;
-    color: #363537; }
-  .foo .foo--redes {
-    width: 35px;
-    height: 35px;
-    align-self: center; }
+  background-color: #2FBF71;
+}
+
+.foo .textoFooter {
+  font-size: 1rem;
+  font-style: italic;
+  font-family: "Roboto";
+  font-weight: bold;
+  color: #363537;
+}
+
+.foo .foo--redes {
+  width: 35px;
+  height: 35px;
+}

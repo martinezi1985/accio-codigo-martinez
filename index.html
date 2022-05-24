@@ -21,42 +21,35 @@
 
 <header class="container-md-12">
 
-    <div class="row">
 
-        <div class="col-8 col-lg-10">
-            <h1 class="principal__index--encabezados">Bienvenido a Accio Código</h1>
+    <!--- Navbar inicio --->
 
-
-
-
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="img/logo_accio.png" alt="logo de la página"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav menuBar">
+                    <li class="nav-item listas">
+                        <a class="nav-link" href="pages/acerca_de.html">Mi informacion</a>
+                    </li>
+                    <li class="nav-item listas">
+                        <a class="nav-link" href="pages/portafolio.html">Portafolio</a>
+                    </li>
+                    <li class="nav-item listas">
+                        <a class="nav-link" href="pages/habilidades.html">Habilidades</a>
+                    </li>
+                    <li class="nav-item listas">
+                        <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <!--- nav imagen logotipo y enlaces html --->
-
-    <nav class="navbar navbar-expand-sm bg-light justify-content-center">
-
-        <img class="logotipo" src="img/logo_accio.png" alt="logotipo de la página">
-
-
-
-        <ul class="nav menuBar">
-            <li class="nav-item listas"><a href="index.html"><button type="button"
-                        class="btn btn-danger">Inicio</button></a></li>
-            <li class="nav-item listas"><a href="pages/acerca_de.html"><button type="button" class="btn btn-danger">Mi
-                        información</button></a></li>
-            <li class="nav-item listas"><a href="pages/portafolio.html"><button type="button"
-                        class="btn btn-danger">Portafolio</button></a></li>
-            <li class="nav-item listas"><a href="pages/habilidades.html"><button type="button"
-                        class="btn btn-danger">Habilidades</button></a></li>
-            <li class="nav-item listas"><a href="pages/contacto.html"><button type="button"
-                        class="btn btn-danger">Contacto</button></a></li>
-        </ul>
-
-        </div>
-
-
-
     </nav>
+    <!-- Navbar fin -->
+
     </div>
 </header>
 
@@ -64,7 +57,7 @@
 
 <main class="container-fluid-md-12">
 
-    <!-- Carousel -->
+    <!-- Carousel inicio-->
 
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -97,9 +90,9 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    <!-- Carousel fin -->
 
-
-    <!-- Llamado a la acción -->
+    <!-- Llamado a la acción inicio -->
 
     <section class="container-md-12">
 
@@ -111,17 +104,31 @@
         </div>
 
     </section>
+    <!--Llamado a la acción fin-->
+
+    <!-- Enlaces al portafolio e introducción-->
+
+    <section class="principal--portafolio">
 
 
-    <!-- Enlaces al portafolio -->
+        <div class="row">
 
-    <section class="d-flex justify-content-center principal--portafolio">
+            <div class="col-10 col-lg-12">
+                <h1 class="principal__index--encabezado">Portafolio</h1>
 
+                <p class="textoPortafolio">Hola! Mi nombre es Ignacio Gabriel Martinez y soy un
+                    freelancer viviendo en Argentina. Si no estoy trabajando en alguna
+                    de las mejores agencias digitales, estoy trabajando de forma remota para clientes en todo el mundo.
+                    Tengo un rango de habilidades que van desde el diseño gráfico a diversos lenguajes, tanto maquetado
+                    como programación; HTML5, CSS3, Javascript... todo el camino hasta PHP y Java. A continuación puedes
+                    ver algunas de las compañias para las que diseñe sus paginas, haz clic en cualquiera de ellas y te
+                    llevaran a la sección de mi portafolio.</p>
+            </div>
+        </div>
 
-        <div>
-            <h2 class="principal__index--encabezados">Portafolio</h2>
+        <div class="row">
 
-            <div class="col-6 col-lg-12">
+            <div class="col-10 col-lg-12">
                 <a href="pages/portafolio.html" target="_blank"><img src="img/cocacolacanva.png"
                         class="logos--portafolio" alt="logo de coca cola"></a>
                 <a href="pages/portafolio.html" target="_blank"><img src="img/ibmcanva.png" class="logos--portafolio"
@@ -137,12 +144,15 @@
             </div>
         </div>
 
+
     </section>
+    <!--Enlaces al portafolio e introducción fin-->
 
 
 </main>
+<!--Fin main index-->
 
-<!-- Footer -->
+<!-- Footer inicio -->
 
 <footer class="container-md-12 foo">
 
@@ -166,6 +176,9 @@
         </div>
     </div>
 </footer>
+<!--Fin footer-->
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">

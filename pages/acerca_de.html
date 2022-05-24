@@ -22,44 +22,41 @@
 
     <header class="container-md-12">
 
-        <div class="row">
 
-            <div class="col-8 col-lg-10">
-                <h1 class="principal__index--encabezados">Bienvenido a Accio Código</h1>
+        <!--- Navbar inicio --->
 
-
-
-
+        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/logo_accio.png"
+                        alt="logo de la página"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav menuBar">
+                        <li class="nav-item listas">
+                            <a class="nav-link listas" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item listas">
+                            <a class="nav-link listas" href="portafolio.html">Portafolio</a>
+                        </li>
+                        <li class="nav-item listas">
+                            <a class="nav-link listas" href="habilidades.html">Habilidades</a>
+                        </li>
+                        <li class="nav-item listas">
+                            <a class="nav-link listas" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <!--- nav imagen logotipo y enlaces html --->
-
-        <nav class="navbar navbar-expand-sm bg-light justify-content-center">
-
-            <img class="logotipo" src="../img/logo_accio.png" alt="logotipo de la página">
-
-
-
-            <ul class="nav menuBar">
-                <li class="nav-item listas"><a href="../index.html"><button type="button"
-                            class="btn btn-danger">Inicio</button></a></li>
-                <li class="nav-item listas"><a href="portafolio.html"><button type="button"
-                            class="btn btn-danger">Portafolio</button></a></li>
-                <li class="nav-item listas"><a href="habilidades.html"><button type="button"
-                            class="btn btn-danger">Habilidades</button></a></li>
-                <li class="nav-item listas"><a href="contacto.html"><button type="button"
-                            class="btn btn-danger">Contacto</button></a></li>
-            </ul>
-
-            </div>
-
-
-
         </nav>
-        </div>
+        <!--Navbar fin-->
+    </div>
     </header>
-
-    <!-- Main Acerca de mi -->
+    
+    
+    <!-- Main acerca de mi inicio -->
 
     <main class="container-md-12 acerca-de-mi">
 
@@ -73,12 +70,12 @@
                 </div>
             </div>
 
-            <div class="row col-6 col-lg-8 acerca-de-mi">
+            <div class="row acerca-de-mi">
 
-                <div class="textoAcerca">
+                <div class=" col-10 col-lg-12 textoAcerca">
 
-                    <h2 class="texto--1">Resumen sobre mi</h2>
-                    <p class="texto--2"> Mi nombre es Ignacio Gabriel Martínez y soy estudiante en Coder
+
+                    <p class="textoDescripcion"> Mi nombre es Ignacio Gabriel Martínez y soy estudiante en Coder
                         House para la carrera Full-Stack
                         Developer. Mi educación formal actual es el secundario. Me he desempeñado en diversos empleos en
                         un periódo de tiempo de más de 11 años y ahora me
@@ -91,9 +88,12 @@
                         construir una carrera dentro del mundo IT, aprendiendo las herramientas que
                         sean requeridas.
                     </p>
-                    <h4 class="texto--3">Para más información, mira el vídeo que figura en ésta página:</h4>
+                    <h1 class="encabezadoVideo">Para más información, mira el vídeo que figura en ésta página:</h1>
                 </div>
             </div>
+
+
+
             <div><iframe width="560" height="315" src="https://www.youtube.com/embed/BsL5sV1GP2Y"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -106,7 +106,9 @@
 
 
     </main>
+    <!--Main acerca de mi fin-->
 
+    <!--Footer inicio-->
     <footer class="container-md-12 foo">
 
 
@@ -129,7 +131,7 @@
             </div>
         </div>
     </footer>
-
+<!--Footer fin-->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
