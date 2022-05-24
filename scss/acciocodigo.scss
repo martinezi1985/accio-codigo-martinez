@@ -37,7 +37,6 @@ $colortexto1: #363537;
 @media only screen and (min-width:350px) and (min-height:500px) {
 
 
-
     .principal--llamado {
 
         height: auto;
@@ -55,6 +54,7 @@ $colortexto1: #363537;
         font-style: italic;
         justify-self: center;
         align-self: center;
+        padding-left: 5rem;
     }
 
     .principal--portafolio {
@@ -217,7 +217,7 @@ $colortexto1: #363537;
 
     .textoFooter {
 
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-style: italic;
         font-family: $font1;
         font-weight: bold;
