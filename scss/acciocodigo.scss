@@ -10,7 +10,7 @@ $font4: sans-serif;
 
 $colortexto1: #363537;
 
-$aspectratio: 1,6;
+
 
 
 
@@ -36,15 +36,14 @@ $aspectratio: 1,6;
 
 /* Main Index */
 
-@media only screen and (min-width:350px) {
-
+@media only screen and (min-width:350px) and (min-height:500px) {
 
 
     .principal--llamado {
 
         height: auto;
         width: 100%;
-        aspect-ratio: $aspectratio;
+        aspect-ratio: 1,6;
         overflow: hidden;
         justify-self: center;
         align-self: center;
@@ -58,6 +57,17 @@ $aspectratio: 1,6;
         font-style: italic;
         justify-self: center;
         align-self: center;
+        padding-left: 18rem;
+    }
+
+    .principal__index--encabezado {
+
+        color: #EF2D56;
+        text-align: center;
+        font-style: italic;
+        justify-self: center;
+        align-self: center;
+        padding-left: 5rem;
     }
 
     .principal--portafolio {
