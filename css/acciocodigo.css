@@ -1,4 +1,5 @@
 /* --- Enlaces de HTML --- */
+
 .menuBar {
   display: flex;
   flex-flow: auto;
@@ -15,16 +16,23 @@
 }
 
 /* Main Index */
+
 @media only screen and (min-width: 350px) {
+
+  .carouselEstilo {
+    color: #EF2D56;
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: bold;
+  }
 
   .principal--llamado {
     height: auto;
     width: 100%;
-    aspect-ratio: 1,6;
     overflow: hidden;
     justify-self: center;
     align-self: center;
-    padding-left: 18rem;
+    padding-left: 7rem;
   }
 
   .principal__index--encabezado {
@@ -33,6 +41,7 @@
     font-style: italic;
     justify-self: center;
     align-self: center;
+    padding-left: 5rem;
   }
 
   .principal--portafolio {
@@ -63,6 +72,7 @@
 }
 
 /* Main Acerca de mi */
+
 @media only screen and (min-width: 350px) {
 
   .acerca-de-mi {
@@ -111,6 +121,7 @@
 }
 
 /* Main Portafolio */
+
 @media only screen and (min-width: 350px) {
 
   .portafolioMain {
@@ -124,6 +135,7 @@
 }
 
 /* Main Habilidades */
+
 @media only screen and (min-width: 350px) {
 
   .logosHabilidades {
@@ -137,6 +149,7 @@
 }
 
 /* Main Formulario */
+
 @media only screen and (min-width: 350px) {
 
   .principalFormulario {
@@ -159,8 +172,8 @@
 }
 
 /* Encabezados h1 portafolio, habilidades y contacto */
-@media only screen and (min-width: 350px) {
 
+@media only screen and (min-width: 350px) {
   .encabezadoEstilo {
     color: #EF2D56;
     Font-style: italic;

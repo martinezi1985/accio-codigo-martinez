@@ -10,7 +10,7 @@ $font4: sans-serif;
 
 $colortexto1: #363537;
 
-
+$colortexto2: #EF2D56;
 
 
 
@@ -36,33 +36,29 @@ $colortexto1: #363537;
 
 /* Main Index */
 
-@media only screen and (min-width:350px) and (min-height:500px) {
+@media only screen and (min-width:350px) {
 
+
+    .carouselEstilo {
+        color: $colortexto2;
+        font-family: $font1;
+        font-style: italic;
+        font-weight: bold;
+    }
 
     .principal--llamado {
 
         height: auto;
         width: 100%;
-        aspect-ratio: 1,6;
         overflow: hidden;
         justify-self: center;
         align-self: center;
-        padding-left: 18rem;
+        padding-left: 7rem;
     }
 
     .principal__index--encabezado {
 
-        color: #EF2D56;
-        text-align: center;
-        font-style: italic;
-        justify-self: center;
-        align-self: center;
-        padding-left: 18rem;
-    }
-
-    .principal__index--encabezado {
-
-        color: #EF2D56;
+        color: $colortexto2;
         text-align: center;
         font-style: italic;
         justify-self: center;
@@ -81,7 +77,7 @@ $colortexto1: #363537;
             font-size: 1rem;
             font-family: $font1;
             font-style: italic;
-            color: #363537;
+            color: $colortexto1;
         }
 
         .logos--portafolio {
@@ -132,11 +128,11 @@ $colortexto1: #363537;
             font-size: 1rem;
             font-family: $font1;
             font-style: italic;
-            color: #363537;
+            color: $colortexto1;
         }
 
         .encabezadoVideo {
-            color: #EF2D56;
+            color: $colortexto2;
             font-family: $font1;
             font-style: italic;
             justify-self: left;
@@ -187,12 +183,12 @@ $colortexto1: #363537;
         font-style: italic;
         font-weight: bold;
         font-family: $font1;
-        color: #363537;
+        color: $colortexto1;
         padding: 1em;
 
         .etiquetasFormulario {
             font-size: 1rem;
-            color: #EF2D56
+            color: $colortexto2;
         }
 
         .consultaBorde {
@@ -207,7 +203,7 @@ $colortexto1: #363537;
 @media only screen and (min-width:350px) {
 
     .encabezadoEstilo {
-        color: #EF2D56;
+        color: $colortexto2;
         Font-style: italic;
         justify-self: left;
         align-self: center;
